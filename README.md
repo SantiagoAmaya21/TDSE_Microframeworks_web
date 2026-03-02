@@ -1,6 +1,8 @@
 # TDSE Micro Web Framework
 ### Transformación Digital y Soluciones Empresariales (TDSE)
 
+Student Name: Santiago Amaya Zapata
+
 ## Project Overview
 
 This project consists of the development of a lightweight Java web framework capable of:
