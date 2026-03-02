@@ -33,22 +33,23 @@ The framework follows a modular and layered design:
 ```mermaid
 flowchart TD
 
-    A[Client / Browser] --> B[HttpServer]
-    
-    B --> C{Route Exists?}
-    
-    C -->|Yes| D[WebFramework Route Registry]
-    D --> E[Lambda Route (Route Interface)]
-    E --> F[Request Object]
-    E --> G[Response Object]
-    E --> H[Send HTTP Response]
+    A[Client Browser] --> B[HttpServer]
 
-    C -->|No| I[Static File Handler]
-    I --> J[Static Folder Configuration]
-    J --> K[Serve File from target/classes]
+    B --> C{Route Exists}
 
-    H --> L[HTTP Response to Client]
-    K --> L
+    C -- Yes --> D[WebFramework]
+    D --> E[Route Registry]
+    E --> F[Lambda Route]
+    F --> G[Request Object]
+    F --> H[Response Object]
+    F --> I[Send HTTP Response]
+
+    C -- No --> J[Static File Handler]
+    J --> K[Static Folder]
+    K --> L[Serve File from target classes]
+
+    I --> M[HTTP Response to Client]
+    L --> M
 ```
 
 ### Main Components
