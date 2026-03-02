@@ -61,7 +61,7 @@ flowchart TD
 | `Route` | Functional interface for lambda REST handlers |
 | `Request` | Parses HTTP request and query parameters |
 | `Response` | Manages status and content type |
-| `App` | Example application |
+| `Main` | Example application |
 | `Static File Handler` | Serves static resources |
 
 ---
