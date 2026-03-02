@@ -1,4 +1,4 @@
-package org.example;
+package edu.eci.tdse.framework;
 
 public class Main {
     public static void main(String[] args) {
